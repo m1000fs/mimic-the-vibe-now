@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface ArticleCardProps {
+  id?: number;
   image: string;
   title: string;
   excerpt?: string;
@@ -12,6 +13,7 @@ interface ArticleCardProps {
 }
 
 const ArticleCard: React.FC<ArticleCardProps> = ({
+  id = 1, // Default ID if not provided
   image,
   title,
   excerpt,
@@ -21,7 +23,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
 }) => {
   return (
     <article className={`mb-6 animate-fade-in-up`}>
-      <Link to="/" className="block group">
+      <Link to={`/article/${id}`} className="block group">
         <div className="mb-3">
           <img
             src={image}

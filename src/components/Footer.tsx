@@ -16,17 +16,20 @@ const Footer = () => {
           <div>
             <h5 className="text-sm uppercase font-sans font-bold mb-4">Sections</h5>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/" className="hover:text-white transition-colors">Arts</Link></li>
-              <li><Link to="/" className="hover:text-white transition-colors">Culture</Link></li>
-              <li><Link to="/" className="hover:text-white transition-colors">Design</Link></li>
-              <li><Link to="/" className="hover:text-white transition-colors">Politics</Link></li>
+              <li><Link to="/section/arts" className="hover:text-white transition-colors">Arts</Link></li>
+              <li><Link to="/section/culture" className="hover:text-white transition-colors">Culture</Link></li>
+              <li><Link to="/section/design" className="hover:text-white transition-colors">Design</Link></li>
+              <li><Link to="/section/politics" className="hover:text-white transition-colors">Politics</Link></li>
+              <li><Link to="/section/science" className="hover:text-white transition-colors">Science</Link></li>
+              <li><Link to="/section/travel" className="hover:text-white transition-colors">Travel</Link></li>
+              <li><Link to="/section/technology" className="hover:text-white transition-colors">Technology</Link></li>
             </ul>
           </div>
           <div>
             <h5 className="text-sm uppercase font-sans font-bold mb-4">Information</h5>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link to="/" className="hover:text-white transition-colors">Careers</Link></li>
               <li><Link to="/" className="hover:text-white transition-colors">Advertise</Link></li>
             </ul>

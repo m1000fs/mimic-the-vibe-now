@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface FeaturedArticleProps {
+  id?: number;
   image: string;
   title: string;
   excerpt: string;
@@ -11,6 +12,7 @@ interface FeaturedArticleProps {
 }
 
 const FeaturedArticle: React.FC<FeaturedArticleProps> = ({
+  id = 1, // Default ID if not provided
   image,
   title,
   excerpt,
@@ -19,7 +21,7 @@ const FeaturedArticle: React.FC<FeaturedArticleProps> = ({
 }) => {
   return (
     <article className="animate-fade-in">
-      <Link to="/" className="block group">
+      <Link to={`/article/${id}`} className="block group">
         <div className="relative overflow-hidden">
           <img
             src={image}

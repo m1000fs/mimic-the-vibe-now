@@ -22,6 +22,7 @@ const Index = () => {
         {/* Featured Article (Hero) */}
         <section className="mb-8">
           <FeaturedArticle 
+            id={featuredArticle.id}
             image={featuredArticle.image}
             title={featuredArticle.title}
             excerpt={featuredArticle.excerpt}
@@ -37,6 +38,7 @@ const Index = () => {
             {editorsPicks.map(article => (
               <ArticleCard
                 key={article.id}
+                id={article.id}
                 image={article.image}
                 title={article.title}
                 excerpt={article.excerpt}
@@ -56,6 +58,7 @@ const Index = () => {
             {latestArticles.map(article => (
               <ArticleCard
                 key={article.id}
+                id={article.id}
                 image={article.image}
                 title={article.title}
                 excerpt={article.excerpt}
@@ -86,7 +89,11 @@ const Index = () => {
                         <span className="inline-block text-xs uppercase font-sans tracking-wider mb-1 text-gray-500">
                           {article.category}
                         </span>
-                        <h3 className="font-playfair text-xl font-bold mb-2">{article.title}</h3>
+                        <h3 className="font-playfair text-xl font-bold mb-2">
+                          <Link to={`/article/${article.id}`} className="hover:underline">
+                            {article.title}
+                          </Link>
+                        </h3>
                         <p className="text-gray-700 text-sm mb-2">{article.excerpt}</p>
                         <p className="text-xs font-sans italic text-gray-500">{article.author} • {article.date}</p>
                       </div>
@@ -104,6 +111,7 @@ const Index = () => {
                   {trendingArticles.map((article, index) => (
                     <div key={article.id} className={index !== 0 ? "pt-6 border-t border-gray-200" : ""}>
                       <ArticleCard
+                        id={article.id}
                         image={article.image}
                         title={article.title}
                         category={article.category}
