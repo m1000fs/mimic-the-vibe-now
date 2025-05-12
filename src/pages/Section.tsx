@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ArticleCard from '@/components/ArticleCard';
@@ -31,7 +31,6 @@ const Section = () => {
   
   // Get featured article (first article)
   const featuredArticle = displayArticles[0];
-  const remainingArticles = paginatedArticles.slice(featuredArticle ? 1 : 0);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -47,18 +46,22 @@ const Section = () => {
             <div className="mb-12">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div className="md:col-span-7">
-                  <img 
-                    src={featuredArticle.image} 
-                    alt={featuredArticle.title} 
-                    className="w-full h-96 object-cover"
-                  />
+                  <Link to={`/article/${featuredArticle.id}`}>
+                    <img 
+                      src={featuredArticle.image} 
+                      alt={featuredArticle.title} 
+                      className="w-full h-96 object-cover"
+                    />
+                  </Link>
                 </div>
                 <div className="md:col-span-5 flex flex-col justify-center">
                   <span className="inline-block text-xs uppercase font-sans tracking-wider mb-2 text-gray-500">
                     {featuredArticle.category}
                   </span>
                   <h2 className="font-playfair text-3xl md:text-4xl font-bold leading-tight mb-4">
-                    {featuredArticle.title}
+                    <Link to={`/article/${featuredArticle.id}`}>
+                      {featuredArticle.title}
+                    </Link>
                   </h2>
                   <p className="text-gray-700 mb-4">
                     {featuredArticle.excerpt}
@@ -73,18 +76,32 @@ const Section = () => {
           
           {/* Article Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {remainingArticles.map(article => (
-              <ArticleCard
-                key={article.id}
-                image={article.image}
-                title={article.title}
-                excerpt={article.excerpt}
-                category={article.category}
-                author={article.author}
-                size="medium"
-              />
-            ))}
+            {paginatedArticles.map((article, index) => {
+              // Skip the first article on page 1 as it's already displayed as featured
+              if (index === 0 && page === 1 && featuredArticle) return null;
+              
+              return (
+                <ArticleCard
+                  key={article.id}
+                  id={article.id}
+                  image={article.image}
+                  title={article.title}
+                  excerpt={article.excerpt}
+                  category={article.category}
+                  author={article.author}
+                  size="medium"
+                />
+              );
+            })}
           </div>
+          
+          {/* Message when no articles are found */}
+          {paginatedArticles.length === 0 && (
+            <div className="text-center py-12">
+              <h3 className="text-xl font-medium text-gray-600">No articles found in this category.</h3>
+              <p className="mt-2 text-gray-500">Please check back later or explore other categories.</p>
+            </div>
+          )}
           
           {/* Pagination */}
           {totalPages > 1 && (

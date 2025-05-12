@@ -80,18 +80,22 @@ const Index = () => {
                   <div key={article.id} className="border-b border-gray-200 pb-8 last:border-0">
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
                       <div className="md:col-span-5">
-                        <img 
-                          src={article.image} 
-                          alt={article.title} 
-                          className="w-full h-48 object-cover" 
-                        />
+                        <Link to={`/article/${article.id}`}>
+                          <img 
+                            src={article.image} 
+                            alt={article.title} 
+                            className="w-full h-48 object-cover" 
+                          />
+                        </Link>
                       </div>
                       <div className="md:col-span-7">
                         <span className="inline-block text-xs uppercase font-sans tracking-wider mb-1 text-gray-500">
-                          {article.category}
+                          <Link to={`/section/${article.category.toLowerCase()}`}>
+                            {article.category}
+                          </Link>
                         </span>
                         <h3 className="font-playfair text-xl font-bold mb-2">
-                          <Link to={`/article/${article.id}`} className="hover:underline">
+                          <Link to={`/article/${article.id}`}>
                             {article.title}
                           </Link>
                         </h3>
