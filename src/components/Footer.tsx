@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h4 className="font-playfair text-xl mb-4">THE DAILY CHRONICLE</h4>
+            <h4 className="font-playfair text-xl mb-4">WECODE</h4>
             <p className="text-gray-400 text-sm">
               Exploring the intersections of culture, politics, and ideas through thoughtful journalism.
             </p>

@@ -40,7 +40,7 @@ const Header = () => {
           <div className="flex-1 md:flex-none text-center md:text-left">
             <Link to="/" className="inline-block">
               <h1 className="font-playfair font-black text-2xl md:text-3xl tracking-tight">
-                THE DAILY CHRONICLE
+                WECODE
               </h1>
             </Link>
           </div>
