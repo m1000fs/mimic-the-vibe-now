@@ -42,7 +42,7 @@ export const articles: Article[] = [
       "How AI and robotics are transforming farming practices while addressing global food security challenges.",
     content: "Lorem ipsum dolor sit amet...",
     image:
-      "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+      "/attached_assets/ChatGPT Image 13. Mai 2025, 12_53_50.png",
     category: "History",
     author: "Randolph Mbecheun",
     date: "May 8, 2025",
