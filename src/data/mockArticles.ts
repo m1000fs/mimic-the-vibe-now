@@ -11,13 +11,13 @@ export interface Article {
 
 export const featuredArticle: Article = {
   id: 1,
-  title: "The Resurgence of Analog in a Digital World",
+  title: "Murderbot: The AI That'd Rather Watch TV Than Save the World",
   excerpt:
-    "How vintage technologies are finding new life in our hyperconnected society, creating nostalgic spaces for authentic experiences.",
+    "In a future where security androids are built to protect humans, one self-aware unit hacks its own programming to pursue a simple desire: binge-watching soap operas. Based on Martha Wells' acclaimed series, Murderbot explores the ironic journey of a robot seeking solitude amidst chaos",
   content: "Long-form content goes here...",
   image:
-    "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-  category: "Technology",
+    "/attached_assets/hdtv.webp",
+  category: "AI in Culture",
   author: "Randolph Mbecheun",
   date: "May 10, 2025",
 };
