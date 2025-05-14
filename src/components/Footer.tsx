@@ -16,13 +16,12 @@ const Footer = () => {
           <div>
             <h5 className="text-sm uppercase font-sans font-bold mb-4">Sections</h5>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/section/arts" className="hover:text-white transition-colors">Arts</Link></li>
-              <li><Link to="/section/culture" className="hover:text-white transition-colors">Culture</Link></li>
-              <li><Link to="/section/design" className="hover:text-white transition-colors">Design</Link></li>
-              <li><Link to="/section/politics" className="hover:text-white transition-colors">Politics</Link></li>
-              <li><Link to="/section/science" className="hover:text-white transition-colors">Science</Link></li>
-              <li><Link to="/section/travel" className="hover:text-white transition-colors">Travel</Link></li>
-              <li><Link to="/section/technology" className="hover:text-white transition-colors">Technology</Link></li>
+              <li><Link to="/section/ai-in-culture" className="hover:text-white transition-colors">AI in Culture</Link></li>
+              <li><Link to="/section/industry-companies" className="hover:text-white transition-colors">Industry & Companies</Link></li>
+              <li><Link to="/section/research-breakthroughs" className="hover:text-white transition-colors">Research & Breakthroughs</Link></li>
+              <li><Link to="/section/policy-ethics" className="hover:text-white transition-colors">Policy & Ethics</Link></li>
+              <li><Link to="/section/people-power" className="hover:text-white transition-colors">People & Power</Link></li>
+              <li><Link to="/section/tools-apis" className="hover:text-white transition-colors">Tools & APIs</Link></li>
             </ul>
           </div>
           <div>
