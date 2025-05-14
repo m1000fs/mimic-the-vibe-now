@@ -16,13 +16,12 @@ const Header = () => {
   };
 
   const categories = [
-    { name: 'Arts', path: '/section/arts' },
-    { name: 'Culture', path: '/section/culture' },
-    { name: 'Design', path: '/section/design' },
-    { name: 'Politics', path: '/section/politics' },
-    { name: 'Science', path: '/section/science' },
-    { name: 'Travel', path: '/section/travel' },
-    { name: 'Technology', path: '/section/technology' }
+    { name: 'AI in Culture', path: '/section/ai-in-culture' },
+    { name: 'Industry & Companies', path: '/section/industry-companies' },
+    { name: 'Research & Breakthroughs', path: '/section/research-breakthroughs' },
+    { name: 'Policy & Ethics', path: '/section/policy-ethics' },
+    { name: 'People & Power', path: '/section/people-power' },
+    { name: 'Tools & APIs', path: '/section/tools-apis' }
   ];
 
   return (
