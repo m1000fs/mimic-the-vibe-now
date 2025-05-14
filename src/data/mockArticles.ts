@@ -37,12 +37,12 @@ export const articles: Article[] = [
   },
   {
     id: 3,
-    title: "Early internet and Technology Booms: Historical Timeline and Lessons for the AI Era",
+    title:
+      "Early internet and Technology Booms: Historical Timeline and Lessons for the AI Era",
     excerpt:
       "How AI and robotics are transforming farming practices while addressing global food security challenges.",
     content: "Lorem ipsum dolor sit amet...",
-    image:
-      "/attached_assets/ChatGPT Image 13. Mai 2025, 12_53_50.png",
+    image: "/attached_assets/ChatGPT Image 13. Mai 2025, 12_53_50.png",
     category: "History",
     author: "Randolph Mbecheun",
     date: "May 8, 2025",
@@ -53,17 +53,16 @@ export const articles: Article[] = [
     excerpt:
       "We call on all AI labs to immediately pause for at least 6 months the training of AI Systems more powerfull than GPT-4",
     content: "Lorem ipsum dolor sit amet...",
-    image:
-      "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+    image: "/attached_assets/fli_logo_white-300x204.webp",
     category: "Culture",
     author: "Randolph Mbecheun",
     date: "May 7, 2025",
   },
   {
     id: 5,
-    title: "The Psychology Behind Minimal Living",
+    title: "Natural Language Processing (NLP): Concepts, Techniques, and Real-World Applications",
     excerpt:
-      "Understanding why minimalism appeals to the overwhelmed mind and how it shapes our relationship with possessions.",
+      "This article breaks down the essentials of Natural Language Processing (NLP), covering key techniques like tokenization, parsing, and word embeddings, as well as real-world uses in translation, chatbots, and text analysis. It also highlights popular tools like spaCy and Hugging Face that power today’s language technologies.",
     content: "Lorem ipsum dolor sit amet...",
     image:
       "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
