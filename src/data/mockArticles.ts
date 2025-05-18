@@ -77,7 +77,7 @@ export const articles: Article[] = [
       "How digital tools are democratizing cinema and allowing new voices to emerge in the global film landscape.",
     content: "Lorem ipsum dolor sit amet...",
     image:
-      "/attached_assets/Andrej karparthy.jpg",
+      "/attached_assets/Andrej Karparthy.jpg",
     category: "People & power",
     author: "Randolph Mbecheun",
     date: "May 5, 2025",
