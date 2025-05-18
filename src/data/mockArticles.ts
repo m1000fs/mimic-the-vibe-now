@@ -65,7 +65,7 @@ export const articles: Article[] = [
       "This article breaks down the essentials of Natural Language Processing (NLP), covering key techniques like tokenization, parsing, and word embeddings, as well as real-world uses in translation, chatbots, and text analysis. It also highlights popular tools like spaCy and Hugging Face that power today’s language technologies.",
     content: "Lorem ipsum dolor sit amet...",
     image:
-      "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+      "/attached_assets/imagenet.png",
     category: "Living",
     author: "Randolph Mbecheun",
     date: "May 6, 2025",
