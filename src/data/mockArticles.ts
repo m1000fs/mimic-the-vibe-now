@@ -30,7 +30,7 @@ export const articles: Article[] = [
       "Exploring how architects and urban planners are reimagining city spaces for a more sustainable and community-focused future.",
     content: "Lorem ipsum dolor sit amet...",
     image:
-      "https://images.unsplash.com/photo-1481253127861-534498168948?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+      "/attached_assets/imagenet.png",
     category: "Research Papers",
     author: "Randolph Mbecheun",
     date: "May 9, 2025",
@@ -72,13 +72,13 @@ export const articles: Article[] = [
   },
   {
     id: 6,
-    title: "The New Wave of Independent Filmmaking",
+    title: "Andrej Karparthy",
     excerpt:
       "How digital tools are democratizing cinema and allowing new voices to emerge in the global film landscape.",
     content: "Lorem ipsum dolor sit amet...",
     image:
-      "https://images.unsplash.com/photo-1505209033803-ea86bef34a5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    category: "Arts",
+      "/attached_assets/Andrej karparthy.jpg",
+    category: "People & power",
     author: "Randolph Mbecheun",
     date: "May 5, 2025",
   },
@@ -113,7 +113,7 @@ export const articles: Article[] = [
       "Analyzing how social media and changing demographics are reshaping political communication.",
     content: "Lorem ipsum dolor sit amet...",
     image:
-      "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+      "/attached_assets/mcp.jpg",
     category: "Politics",
     author: "Randolph Mbecheun",
     date: "May 2, 2025",
@@ -123,13 +123,13 @@ export const articles: Article[] = [
 export const trendingArticles: Article[] = [
   {
     id: 10,
-    title: "The Renaissance of Artisanal Craftsmanship",
+    title: "model context protocol",
     excerpt:
       "Exploring the renewed interest in handmade goods in response to mass production.",
     content: "Lorem ipsum dolor sit amet...",
     image:
-      "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-    category: "Lifestyle",
+      "/attached_assets/mcp.jpg",
+    category: "Tools & API",
     author: "Randolph Mbecheun",
     date: "May 1, 2025",
   },
